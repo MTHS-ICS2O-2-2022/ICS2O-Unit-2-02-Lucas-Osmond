@@ -4,13 +4,14 @@
 // Created on: March 2023
 // This file contains the JS functions for index.html
 
-/**
- * Do basic math.
- */
-function doMathClicked() {
-  document.getElementById("add-math").innerHTML = "<p>6 + 5 = " + (6 + 5) + "</p>"
-  document.getElementById("subtract-math").innerHTML = "<p>7 - 3 =  " + (7 - 3) + "</p>"  
-  document.getElementById("multiply-math").innerHTML = "<p>3 + 4 × 2 = " + (3 + 4 * 2) + "</p>" 
-  document.getElementById("divide-math").innerHTML = "<p>(4 ÷ 2) + 3 = " + (4 / 2 + 3) + "</p>"
-  document.getElementById("exponent-math").innerHTML = "<p>5 + 2³ = " + (5 + 2 ** 3) + "</p>"
+function calculate () {
+  // input
+  const length = parseFloat(document.getElementById('length-of-rectangle').value)
+  const width = parseFloat(document.getElementById('width-of-rectangle').value)
+
+  // process
+  const area = (length * width)
+
+  // output
+  document.getElementById('area').innerHTML = 'volume is: ' + area + ' cm³'
 }
