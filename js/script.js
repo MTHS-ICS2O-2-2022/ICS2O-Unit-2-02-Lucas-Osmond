@@ -13,5 +13,5 @@ function calculate () {
   const area = (length * width)
 
   // output
-  document.getElementById('area').innerHTML = 'volume is: ' + area + ' cm³'
+  document.getElementById('area').innerHTML = 'area is: ' + area + 'cm²'
 }

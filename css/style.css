@@ -2,6 +2,10 @@
 * Created on: March 2023
 * This file contains the CSS for index.html
 */
+.mdl-ripple {
+  background: #000;
+  opacity: 0.001;
+}
 
 .mdl-layout__header-row {
   justify-content: content;
@@ -9,9 +13,9 @@
 }
 
 .mdl-layout__content {
-  padding-left: 15pt;
-  padding-right: 25pt;
-  padding-top: 15pt;
+  padding-left: 55pt;
+  padding-right: 55pt;
+  padding-top: 35pt;
 }
 
 .mdl-textfield__error {
