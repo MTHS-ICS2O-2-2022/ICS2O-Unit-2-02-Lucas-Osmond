@@ -4,14 +4,18 @@
 // Created on: March 2023
 // This file contains the JS functions for index.html
 
+'use strict'
+/**
+ * This function calculates area of rectangle.
+ */
 function calculate () {
   // input
-  const length = parseFloat(document.getElementById('length-of-rectangle').value)
-  const width = parseFloat(document.getElementById('width-of-rectangle').value)
+  const length = parseInt(document.getElementById('length-of-rectangle').value)
+  const width = parseInt(document.getElementById('width-of-rectangle').value)
 
   // process
-  const area = (length * width)
+  const area = length * width
 
   // output
-  document.getElementById('area').innerHTML = 'area is: ' + area + 'cm²'
+  document.getElementById('area-of-rectangle').innerHTML = 'Area is: ' + area + ' cm²'
 }

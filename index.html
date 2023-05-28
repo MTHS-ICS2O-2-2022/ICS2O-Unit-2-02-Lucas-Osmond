@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-  <html>
+<html>
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="Volume Of Shapes" />
     <meta name="keywords" content="ics2o" />
     <meta name="author" content="Lucas Osmond" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-teal.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.blue_grey-teal.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -28,7 +34,13 @@
         <table>
           <div>
             <p>
-              <img src="./images/area_and_perimeter.png" alt="pyramid" width="18%" height="auto" class="shape" />
+              <img
+                src="./images/area_and_perimeter.png"
+                alt="pyramid"
+                width="18%"
+                height="auto"
+                class="shape"
+              />
             </p>
             <h2>Formulas</h2>
             <h3>A = (L x W)</h3>
@@ -38,30 +50,46 @@
         <form action="#">
           <p>length</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length-of-pyramid"
-              step="0.01" />
-            <label class="mdl-textfield__label" for="length-of-pyramid">length ...</label>
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="length-of-rectangle"
+              step="0.01"
+            />
+            <label class="mdl-textfield__label" for="length-of-rectangle"
+              >length ...</label
+            >
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
         <form action="#">
           <p>width</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="width-of-pyramid"
-              step="0.01" />
-            <label class="mdl-textfield__label" for="width-of-pyramid">width ...</label>
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="width-of-rectangle"
+              step="0.01"
+            />
+            <label class="mdl-textfield__label" for="width-of-rectangle"
+              >width ...</label
+            >
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
         <br />
         <!-- Raised button with ripple -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculate()">
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="calculate()"
+        >
           Calculate
         </button>
         <br />
         <div id="answers">
-          <div id="area"></div>
+          <div id="area-of-rectangle"></div>
         </div>
       </main>
     </div>
